@@ -1,0 +1,9 @@
+{
+  "name": "alu_regex-data-extraction-nshizirunguwilson",
+  "description": "Data Extraction & Secure Validation",
+  "author": "Wilson Nshizirungu",
+  "type": "module",
+  "dependencies": {
+    "file-system": "^2.2.2"
+  }
+}

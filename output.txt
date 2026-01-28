@@ -1,0 +1,41 @@
+{
+    "emails": [
+        "admin.internal@company-corp.io",
+        "support.tickets@service-provider.net",
+        "john.doe@tech-labs.co.za"
+    ],
+    "urls": [
+        "https://portal.company-corp.io/updates/v2.",
+        "http://docs.internal.net/help/index.html.",
+        "http://insecure-site.tk/login"
+    ],
+    "phoneNumbers": [
+        "(555) 123-4567",
+        "555.987.6543",
+        "+1-555-000-1111"
+    ],
+    "currencyAmounts": [
+        "$1,250.50",
+        "$450.00",
+        "$999"
+    ],
+    "creditCards": [
+        "****-****-****-3456",
+        "****-****-****-7654"
+    ],
+    "timestamps": [
+        "08:30",
+        "16:45",
+        "11:15 PM"
+    ],
+    "htmlTags": [
+        "<div class=\"news-item\">",
+        "<img src=\"logo.png\" alt=\"Company Logo\">"
+    ],
+    "hashtags": [
+        "#4592",
+        "#DataSecurity",
+        "#JuniorDeveloper2024",
+        "#verylonghashtagthatiswaytoolongtoactuallybeuseful"
+    ]
+}
