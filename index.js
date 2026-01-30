@@ -43,10 +43,17 @@ function extractData (text) {
     const emailRegex = /\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b/g;
     // Extract all matches from the text; default to an empty array if none found
     const emailMatches = text.match(emailRegex) || [];
-    // Filter out malformed emails (security/validation check)
+    // Filter out malformed emails (security/validation check) and mask for privacy
     results.emails = emailMatches.filter(email => { // post-regex validation
         // Reject emails that contain double dots, which are invalid but often caught by loose regex
         return !email.includes('..');
+    }).map(email => {
+        const [localPart, domain] = email.split('@');
+        // Mask the local part (username) while keeping the first and last characters visible
+        if (localPart.length > 1) {
+            return localPart[0] + '***' + localPart[localPart.length - 1] + '@' + domain; // Masking the local part (username) while keeping the first and last characters visible
+        }
+        return localPart + '***@' + domain; // 
     });
 
     // URL Extraction & Security Sanitization

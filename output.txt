@@ -1,8 +1,8 @@
 {
     "emails": [
-        "admin.internal@company-corp.io",
-        "support.tickets@service-provider.net",
-        "john.doe@tech-labs.co.za"
+        "a***l@company-corp.io",
+        "s***s@service-provider.net",
+        "j***e@tech-labs.co.za"
     ],
     "urls": [
         "https://portal.company-corp.io/updates/v2.",
